@@ -4,14 +4,35 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
+
+    <h1>Welcome to this demo!</h1>
+
+    <div id="app">
+
+      <product-list>
+
+          <product-item>
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/62/Kermit_the_Frog.jpg" alt="">
+            <h3>SSR Kermit</h3>
+            <p class="description">Kermit der Frosch</p>
+            <p class="price">10 €</p>
+            <p>Dude!</p>
+          </product-item>
+
+        <product-item on-whishlist="">
+          <img src="https://upload.wikimedia.org/wikipedia/en/2/22/MissPiggy.jpg" alt="">
+          <h3>SSR Miss Piggy</h3>
+          <p class="description">Miss Piggy</p>
+          <p class="price">20 €</p>
+        </product-item>
+
+      </product-list>
+
+    </div>
+
     <!-- built files will be auto injected -->
   </body>
 </html>
